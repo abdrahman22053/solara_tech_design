@@ -1,0 +1,5 @@
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+
+@Component({ selector: 'app-auth-layout', standalone: true, imports: [RouterOutlet, RouterLink], changeDetection: ChangeDetectionStrategy.OnPush, template: `<div class="auth-layout"><div class="auth-visual"><a class="brand brand-light" routerLink="/"><span class="brand-mark"><i class="pi pi-sun"></i></span><span>solaris<span class="brand-dot">.</span></span></a><div class="auth-quote"><div class="quote-mark">“</div><h2>L’énergie de demain<br /><em>se construit ensemble.</em></h2><p>La plateforme qui connecte les acteurs du solaire, du premier watt à la dernière intervention.</p><div class="auth-trust"><span><i class="pi pi-check-circle"></i> Catalogue vérifié</span><span><i class="pi pi-check-circle"></i> Partenaires certifiés</span></div></div><div class="auth-orbit orbit-one"></div><div class="auth-orbit orbit-two"></div><div class="auth-sun"><i class="pi pi-sun"></i></div></div><div class="auth-content"><router-outlet /></div></div>` })
+export class AuthLayoutComponent {}
